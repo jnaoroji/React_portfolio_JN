@@ -1,12 +1,12 @@
 import React from "react";
-import NavTabs from "./components/NavTabs";
-import PortfolioContainer from "./components/PortfolioContainer";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 
 const App = () => (
     <div>
-        <NavTabs/>
-        <PortfolioContainer />  
+        <Header/>  
+        <Footer/>
     </div>
 );
 
