@@ -12,9 +12,6 @@ export default function Header() {
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
     if (currentPage === 'About') {
       return <About />;
     }
@@ -24,7 +21,10 @@ export default function Header() {
     if (currentPage === 'Contact') {
       return <Contact />;
     }
-    return <Resume />;
+    if (currentPage === 'Resume') {
+      return <Home />;
+    }
+    return <Home />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);

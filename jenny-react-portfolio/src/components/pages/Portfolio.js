@@ -1,19 +1,17 @@
 import React from 'react';
-// import Project from './Project';
-import '../../styles/styles.css'
 import background from "../../assets/img/portfolio/thumbnails/1.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const styles = {
-  backgroundImage: {
-    backgroundImage: `url("../../assets/img/portfolio/thumbnails/1")`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    width: '33.33%', 
-    float: 'center',
-    height: '100vh',
-  },
-};
+// const styles = {
+//   backgroundImage: {
+//     backgroundImage: `url("../../assets/img/portfolio/thumbnails/1")`,
+//     backgroundSize: 'cover',
+//     backgroundPosition: 'center',
+//     width: '33.33%', 
+//     float: 'center',
+//     height: '100vh',
+//   },
+// };
 
 export default function Portfolio() {
   return (
