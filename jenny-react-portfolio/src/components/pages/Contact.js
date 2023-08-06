@@ -86,11 +86,11 @@ export default function Contact() {
                   <div className="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                 </div>
                             
-                <div className="form-floating mb-3">
+                {/* <div className="form-floating mb-3">
                   <input className="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                   <label for="phone">Phone number</label>
                   <div className="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                </div>
+                </div> */}
                           
                 <div className="form-floating mb-3">
                   <textarea className="form-control" id="message" type="text" placeholder="Enter your message here..." data-sb-validations="required"></textarea>

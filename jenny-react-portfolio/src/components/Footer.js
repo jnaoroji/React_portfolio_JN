@@ -1,18 +1,18 @@
 import React from 'react';
+// import { BsGithub } from "react-icons/bs";
 
 export default function Footer() {
   return (
     <div>
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5">
-              <div class="small text-center text-muted">Copyright &copy; 2023 - Jenny Naoroji</div>
-              <div></div>
+        <footer className="bg-light py-5">
+            <div className="container px-4 px-lg-5">
+              <div className="small text-center text-muted mb-3">Copyright &copy; 2023 - Jenny Naoroji</div>
+              <div className="d-flex justify-content-center align-items-center">
+                <a href="https://github.com/jnaoroji" className="small text-center text-muted me-3"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/jenny-naoroji-158b29281/" className="small text-center text-muted me-3"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/jnaoroji/" className="small text-center text-muted me-3"><i class="bi bi-instagram"></i></a>
+              </div>
             </div>
-            {/* <a href="tel:+15555555555">0414591978</a>
-            <a href="mailto:jennynaorji@gmail.com">jennynaoroji@gmail.com</a>
-            <a href="https://github.com/jnaoroji">GitHub</a>
-            <i class="fab fa-github"></i>
-            <a href="https://www.linkedin.com/in/jenny-naoroji-158b29281/">LinkedIn</a> */}
         </footer>
     </div>
   );
