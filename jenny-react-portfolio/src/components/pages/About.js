@@ -1,15 +1,6 @@
 import React from 'react';
 import avatar from '../../assets/images/profile.jpg';
 
-// const style = {
-//   avatar:{
-//     src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp",
-//     width: 150px,
-//     backgroundImage: `url("../../assets/img/portfolio/thumbnails/1")`,
-//   }
-
-// }
-
 export default function About() {
   return (
     <div>
@@ -34,11 +25,8 @@ export default function About() {
                             me new skills. I have plenty of Customer Service, Supervisory, Management, Event and Operational experience
                             and would love to work in a challenging environment. </p>
                       </div>
-                            
-                        {/* <div><a className="btn btn-light btn-xl" href="#portfolio">Get Started!</a></div> */}
                     </div>
             </div>    
-           {/* </div>    */}
         </section>
     </div>
   );
