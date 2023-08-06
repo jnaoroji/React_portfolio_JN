@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object

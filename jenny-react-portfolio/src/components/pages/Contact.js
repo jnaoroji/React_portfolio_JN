@@ -1,62 +1,73 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import '../../styles/styles.css';
-import React from 'react';
-// function Form() {
-//   // Here we set two state variables for firstName and lastName using `useState`
-//   const [firstName, setFirstName] = useState('');
-//   const [lastName, setLastName] = useState('');
 
-//   const handleInputChange = (e) => {
-//     // Getting the value and name of the input which triggered the change
-//     const { name, value } = e.target;
 
-//     // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-//     return name === 'firstName' ? setFirstName(value) : setLastName(value);
-//   };
-
-//   const handleFormSubmit = (e) => {
-//     // Preventing the default behavior of the form submit (which is to refresh the page)
-//     e.preventDefault();
-
-//     // Alert the user their first and last name, clear the inputs
-//     alert(`Hello ${firstName} ${lastName}`);
-//     setFirstName('');
-//     setLastName('');
-//   };
-
-//   return (
-//     <div>
-//       <p>
-//         Hello {firstName} {lastName}
-//       </p>
-//       <form className="form">
-//         <input
-//           value={firstName}
-//           name="firstName"
-//           onChange={handleInputChange}
-//           type="text"
-//           placeholder="First Name"
-//         />
-//         <input
-//           value={lastName}
-//           name="lastName"
-//           onChange={handleInputChange}
-//           type="text"
-//           placeholder="Last Name"
-//         />
-//         <button type="button" onClick={handleFormSubmit}>
-//           Submit
-//         </button>
-//       </form>
-//     </div>
-//   );
-// }
-
-// export default Form;
+import { validateEmail } from '../../utils/helpers';
 
 
 
 export default function Contact() {
+  // Create state variables for the fields in the form and set their initial values to an empty string
+  
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either full name, email, and message
+    if (inputType === 'fullName') {
+      setFullName(inputValue);
+    } else if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'message') {
+      setMessage(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // Check to see if the name is empty. If so we set an error message to be displayed on the page.
+    if (!fullName ) {
+      setErrorMessage('Your name is required!');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      
+    }// Then we check to see if the email field is empty or is invalid. If so, we set an error message to be displayed.
+    if (!email ) {
+      setErrorMessage('Your email is required!');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      
+    }
+    if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid! Please enter a valid Email Address');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+    }
+    if (!message) {
+      setErrorMessage(
+        `Please enter a message ${fullName}!`
+      );
+      return;
+    }
+    alert(`Thanks for reaching out ${fullName}! I'll be in touch within 48 hours!`);
+    console.log(fullName, email, message);
+
+    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    setFullName('');
+    setEmail('');
+    setMessage('');
+    setErrorMessage('');
+  };
+
   return (
     <div>
       <section className="page-section bg-primary" id="contact">
@@ -71,46 +82,47 @@ export default function Contact() {
           <div className="row gx-4 gx-lg-5 justify-content-center mb-5">
             <div className="col-lg-6">
                        
-              <form id="contactForm">
+              <form className="form" id="contactForm">
                         
                 <div className="form-floating mb-3">
-                  <input className="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                  <input className="form-control" id="name"
+                    value={fullName}
+                    name="fullName"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="Enter your name..."
+                  />
                   <label for="name">Full name</label>
-                  <div className="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                 </div>
                            
                 <div className="form-floating mb-3">
-                  <input className="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                  <input className="form-control" id="email"
+                    value={email}
+                    name="email"
+                    onChange={handleInputChange}
+                    type="email"
+                    placeholder="name@example.com"
+                  />
                   <label for="email">Email address</label>
-                  <div className="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                  <div className="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                 </div>
-                            
-                {/* <div className="form-floating mb-3">
-                  <input className="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                  <label for="phone">Phone number</label>
-                  <div className="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                </div> */}
                           
                 <div className="form-floating mb-3">
-                  <textarea className="form-control" id="message" type="text" placeholder="Enter your message here..." data-sb-validations="required"></textarea>
+                  <input className="form-control" id="message"
+                      value={message}
+                      name="message"
+                      onChange={handleInputChange}
+                      type="text"
+                      placeholder="Enter your message here..."
+                    />
                   <label for="message">Message</label>
-                  <div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                 </div>
-                            
-                <div className="d-none" id="submitSuccessMessage">
-                  <div className="text-center mb-3">
-                  <div className="fw-bolder">Form submission successful!</div>
-                    To activate this form, sign up at
-                    <br />
-                    {/* <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a> */}
-                  </div>
-                </div>
-                            
-                <div className="d-none" id="submitErrorMessage"><div className="text-center text-danger mb-3">Error sending message!</div></div>
-                     
-                <div className="d-grid"><button className="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                <div className="d-grid"><button className="btn btn-primary btn-xl" id="submitButton" type="button" onClick={handleFormSubmit}>Submit</button></div>
               </form>
+              {errorMessage && (
+                <div className="text-center mt-5 mb-5">
+                  <p className="error-text">{errorMessage}</p>
+                </div>
+              )}
             </div>
           </div>
                 
