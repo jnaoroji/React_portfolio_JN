@@ -1,6 +1,7 @@
 import React from 'react';
 import background from "../../assets/img/portfolio/thumbnails/1.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { projects } from '../../projects';
 
 // const style = {
 //   backgroundImage: {
@@ -20,7 +21,7 @@ export default function Portfolio() {
       <section className="page-section bg-primary" id="portfolio">
         {/* <div className="container-fluid p-0"> */}
           <div className="row g-0">
-          <div className="portfolio-box col-lg-3 col-md-4 col-sm-6" style={{ backgroundImage: `url(${background})`, backgroundSize:"cover", height: '300px',width: '33.33%', }}>
+          {/* <div className="portfolio-box col-lg-3 col-md-4 col-sm-6" style={{ backgroundImage: `url(${background})`, backgroundSize:"cover", height: '300px',width: '33.33%', }}>
                             <div className="portfolio-box-caption">
                                 <div className="project-category text-white-50">Project</div>
                                 <div className="project-name">Project Name</div>
@@ -55,7 +56,16 @@ export default function Portfolio() {
                                 <div className="project-category text-white-50">Project</div>
                                 <div className="project-name">Project Name</div>
                             </div>
-          </div>
+          </div> */}
+
+          {projects.map((project,index)=>(
+                      <div key={index} className="portfolio-box col-lg-3 col-md-4 col-sm-6" style={{ backgroundImage: `url(${project.image})`, backgroundSize:"cover", height: '300px',width: '33.33%', }}>
+                      <div className="portfolio-box-caption">
+                          <div className="project-category text-white-50">{project.title}</div>
+                          <div className="project-name">{project.description}</div>
+                      </div>
+                    </div>
+          ))}
 
         </div>
       </section>
