@@ -52,7 +52,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 The following animation shows the web application's appearance and functionality:
 
-![User clicks through About Me, Portfolio, Resume, and Contact sections on the webpage and enters information on Contact page.](./jenny-react-portfolio/src/assets/20-react-homework-demo-01.gif)
+![User clicks through About Me, Portfolio, Resume, and Contact sections on the webpage and enters information on Contact page.](./jenny-react-portfolio/src/assets/images/20-react-homework-demo-01.gif)
 
 ## Getting Started
 
@@ -164,7 +164,7 @@ You are required to submit BOTH of the following for review:
 
 ## Description
 
-My Task was to build a React portfolio where i can share my projects whilst applying for jobs or working as a freelancer and set myself apart from developers who don't use the latest technologies. This will also give me the ability to share my work with other developers and collaborate on projects.
+My Task was to build a React Portfolio Application where I can share my projects whilst applying for jobs or working as a freelancer and set myself apart from developers who don't use the latest technologies. This will also give me the ability to share my work with other developers and collaborate on projects.
 
 This application will be deployed to GitHub Pages and will fulfill the following User Story and Acceptance Criteria:
 
@@ -214,27 +214,30 @@ To use this application visit the deployment link on GitHub Pages!
 
 ## Credits
 
--[Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) 
+- [Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) 
 
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
 - [Bootstrp Portfolio Templates](https://themes.getbootstrap.com/)
 - [Bootstrap Portfolio & Resume Themes](https://startbootstrap.com/themes/portfolio-resume)
+- [Bootstrap Cards](https://getbootstrap.com/docs/4.0/components/card/)
+- [Bootstrap avatars](https://mdbootstrap.com/docs/standard/extended/avatar/)
 - [React input](https://react.dev/reference/react-dom/components/input)
 - [React forms](https://legacy.reactjs.org/docs/forms.html)
+- Mock up demo:
+![Mock Demo](./jenny-react-portfolio/src/assets/images/20-react-homework-demo-01.gif)
 
 ## Screenshots
 These screenshots show my app's functionality:
-- The homepage: 
-![Homepage screenshot](./assets/screenshotHome.png)
+- The About Me Page: 
+![About Me screenshot](./jenny-react-portfolio/src/assets/images/AboutScreenshot.png)
 
-- The Dashboard: 
-![Dashboard screenshot](./assets/ScreenshotDashboard.png)
+- The Portfolio Page: 
+![Portfolio Screenshot](./jenny-react-portfolio/src/assets/images/portfolioScreenshot.png)
 
-- The Comments section: 
-![Comments screenshot](./assets/ScreenshotComments.png)
+- The Contact Page: 
+![Contact Screenshot](./jenny-react-portfolio/src/assets/images/contactScreenshot.png)
 
-- The Update Section: 
-![Updates screenshot](./assets/ScreenshotUpdate.png)
+
 
 ## License
 

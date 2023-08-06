@@ -10,10 +10,6 @@ export default function Home() {
                         <h1 className="text-white font-weight-bold">Jenny's Web Development Portfolio</h1>
                         <hr className="divider" />
                     </div>
-                    {/* <div className="col-lg-8 align-self-baseline">
-                        <a className="btn btn-primary btn-xl" href="#about"
-                        >Find Out More</a>
-                    </div> */}
                 </div>
             </div>
         </header>
