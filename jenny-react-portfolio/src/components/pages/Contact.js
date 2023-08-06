@@ -59,7 +59,7 @@ export default function Contact() {
       return;
     }
     alert(`Thanks for reaching out ${fullName}! I'll be in touch within 48 hours!`);
-    console.log(fullName, email, message);
+    console.log(fullName, email, message)
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setFullName('');
@@ -92,7 +92,7 @@ export default function Contact() {
                     type="text"
                     placeholder="Enter your name..."
                   />
-                  <label for="name">Full name</label>
+                  <label htmlFor="name">Full name</label>
                 </div>
                            
                 <div className="form-floating mb-3">
@@ -103,7 +103,7 @@ export default function Contact() {
                     type="email"
                     placeholder="name@example.com"
                   />
-                  <label for="email">Email address</label>
+                  <label htmlFor="email">Email address</label>
                 </div>
                           
                 <div className="form-floating mb-3">
@@ -114,7 +114,7 @@ export default function Contact() {
                       type="text"
                       placeholder="Enter your message here..."
                     />
-                  <label for="message">Message</label>
+                  <label htmlFor="message">Message</label>
                 </div>
                 <div className="d-grid"><button className="btn btn-primary btn-xl" id="submitButton" type="button" onClick={handleFormSubmit}>Submit</button></div>
               </form>

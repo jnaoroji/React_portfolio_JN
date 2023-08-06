@@ -24,6 +24,7 @@ function NavBar({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange('About')}
                 // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
                 className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                style={{ padding: '10px' }}
               >
                 About
               </a>
@@ -34,6 +35,7 @@ function NavBar({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange('Portfolio')}
                 // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
                 className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                style={{ padding: '10px' }}
               >
                 Portfolio
               </a>
@@ -44,6 +46,7 @@ function NavBar({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange('Contact')}
                 // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
                 className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                style={{ padding: '10px' }}
               >
                 Contact
               </a>
@@ -52,7 +55,8 @@ function NavBar({ currentPage, handlePageChange }) {
               <a
                 href="https://drive.google.com/file/d/1BBWMY2AFzRaGoYkWquBLZcVMAbhhUPiu/view?usp=sharing"
                 target="_blank"
-                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'} 
+                style={{ padding: '10px' }}
               >
                 Resume
               </a>
