@@ -32,10 +32,10 @@ function NavBar({ currentPage, handlePageChange }) {
         aria-controls="navbarResponsive" 
         aria-expanded="false" 
         aria-label="Toggle navigation"
-        onClick={() => handleMenuToggle()} // attach the function to onClick event
+        onClick={handleMenuToggle} 
         ><span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarResponsive">
+        <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarResponsive">
           <ul className="nav nav-tabs navbar-nav ms-auto my-2 my-lg-0">
             <li className="nav-item">
               <a
