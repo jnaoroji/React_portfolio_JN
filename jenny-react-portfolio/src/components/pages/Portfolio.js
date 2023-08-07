@@ -12,12 +12,11 @@ export default function Portfolio() {
                     <div 
                         key={projectIndex} 
                         href={project.link} 
-                        className="portfolio-box col-lg-3 col-md-4 col-sm-6" 
+                        className="portfolio-box col-lg-4 col-md-4 col-sm-6 col-12" 
                         style={{ 
                           backgroundImage: `url(${project.image})`, 
                           backgroundSize:'cover', 
                           height: '250px',
-                          width: '33.33%', 
                           transition: 'opacity 0.25s ease', 
                           textAlign: 'center', }}>
                       <div className="portfolio-box-caption">
