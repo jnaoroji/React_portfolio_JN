@@ -71,14 +71,6 @@ function NavBar({ currentPage, handlePageChange }) {
               </a>
             </li>
             <li className="nav-item">
-              {/* <a
-                href="https://drive.google.com/file/d/1ZEJQ3vjofhlrKsEUEGbTtMHZks22Bk2c/view?usp=sharing"
-                target="_blank"
-                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'} 
-                style={{ padding: '10px' }}
-              >
-                Resume
-              </a> */}
               <a
                 href="#resume"
                 onClick={() => handlePageChange('Resume')}
