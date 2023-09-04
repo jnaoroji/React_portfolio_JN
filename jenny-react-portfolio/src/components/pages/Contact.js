@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import '../../styles/styles.css';
-
-
 import { validateEmail } from '../../utils/helpers';
+
+
+
+
+
 
 
 
 export default function Contact() {
   // Create state variables for the fields in the form and set their initial values to an empty string
-  
+  const form = useRef();
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -29,6 +33,7 @@ export default function Contact() {
       setMessage(inputValue);
     }
   };
+  
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -59,7 +64,25 @@ export default function Contact() {
       return;
     }
     alert(`Thanks for reaching out ${fullName}! I'll be in touch within 48 hours!`);
-    console.log(fullName, email, message)
+    
+  emailjs
+  .sendForm(
+    'service_nc5l32t', 
+    'template_pmg548o', 
+    form.current, 
+    '6zwt6kT9FGlNqoxiv'
+  )
+  .then(
+    (result) => {
+      console.log(result.text);
+      console.log('sent!');
+    },
+    (error) => {
+      console.log(error.text);
+    }
+  );
+    console.log(fullName, email, message);
+
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setFullName('');
@@ -82,8 +105,8 @@ export default function Contact() {
           <div className="row gx-4 gx-lg-5 justify-content-center mb-5">
             <div className="col-lg-6">
                        
-              <form className="form" id="contactForm">
-                        
+              <form className="form" id="contactForm" ref={form}>
+                  
                 <div className="form-floating mb-3">
                   <input className="form-control" id="name"
                     value={fullName}
