@@ -15,14 +15,17 @@ export default function About() {
                         <h2 className="text-white mt-4 mb-4 text-center" >About Me</h2>
                         <hr className="divider divider-light" />
                 
-                        <p className="text-white-75 mb-4">I'm currently a web development student studying online at the University of Adelaide, graduating in September 2023. This webpage showcases some of my current work. I have a bachelor's degree in Information Management, have been working as a Sommelier for the past 3 years and have been in the Hospitality industry for over 15 years.
+                        <p className="text-white-75 mb-4">I’m a Full Stack Web Developer leveraging a management background to provide a unique perspective on how
+                            end users interact with websites and software platforms.
+                            This website showcases some of my current work. I have a bachelor's degree in Information Management, 
+                            have been working as a Sommelier for the past 3 years and have been in the Hospitality industry for over 10 years.
                             My passions inlude Food, Wine and Sport. I am a bubbly, competitive, hard worker. I am a quick
                             learner and am always looking for new challenges and ways to improve and learn. I enjoy creating, establishing
                             and maintaining business and customer relationships and strive to excel at this. My hospitality and customer
                             service background has stemmed into a strong mental aptitude for working efficiently under pressure, and
                             creative problem solving on the job. 
                             I am looking for a role that will allow me to grow, take on new opportunities and responsibilities and teach
-                            me new skills. I have plenty of Customer Service, Supervisory, Management, Event and Operational experience
+                            me new skills. I have plenty of Supervisory, Management, Event and Operational experience
                             and would love to work in a challenging environment. </p>
                       </div>
                     </div>
