@@ -21,6 +21,13 @@ export const projects = [
         git:"https://github.com/jnaoroji/group-project1-team-3-Interactive-Front-End-Application",
     },
     {
+        title: "Yoga Gym", 
+        description: "Interactive Front-End Application",
+        image:"https://user-images.githubusercontent.com/122245852/265583933-61659d5e-270e-4450-a7a3-cbd1a1038ea4.png",
+        link: "https://yogagym.co.nz/home", 
+        git:"https://yogagym.co.nz/home",
+    },
+    {
         title: "Tech Blog", 
         description: "MVC Paradigm",
         image:"https://user-images.githubusercontent.com/122245852/258644365-c822a1f2-5225-4cb7-8cbc-75d399e61c38.png",
@@ -40,13 +47,13 @@ export const projects = [
         image:"https://user-images.githubusercontent.com/122245852/258641976-9bcb6839-7d43-486b-935b-dda569eb6c55.png",
         link: "https://jnaoroji.github.io/Schedule-WorkDay-JN/", 
         git:"https://github.com/jnaoroji/Schedule-WorkDay-JN",
+    },
+    {
+        title: "Note Taker", 
+        description: "Express.js",
+        image:"https://user-images.githubusercontent.com/122245852/258644192-122b50dc-4631-4a7c-a272-298c08c2f255.png",
+        link: "https://express-note-taker-jn.herokuapp.com/", 
+        git:"https://github.com/jnaoroji/Express.js_Note_Taker_JN",
     }
-    // {
-    //     title: "Note Taker", 
-    //     description: "Express.js",
-    //     image:"https://user-images.githubusercontent.com/122245852/258644192-122b50dc-4631-4a7c-a272-298c08c2f255.png",
-    //     link: "https://express-note-taker-jn.herokuapp.com/", 
-    //     git:"https://github.com/jnaoroji/Express.js_Note_Taker_JN",
-    // }
 
 ]

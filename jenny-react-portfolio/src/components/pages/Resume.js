@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Resume() {
   // Create state variables for the fields in the form and set their initial values to an empty string
