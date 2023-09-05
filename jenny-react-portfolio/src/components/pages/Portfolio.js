@@ -7,7 +7,7 @@ export default function Portfolio() {
     <div>
       <section className="page-section bg-primary" id="portfolio">
         <div className="container-fluid p-0">
-          <div className="row g-0">
+          <div className="row  d-flex align-items-center justify-content-center">
           {projects.map((project,projectIndex)=>(
                     <div 
                         key={projectIndex} 
@@ -18,7 +18,8 @@ export default function Portfolio() {
                           backgroundSize:'cover', 
                           height: '250px',
                           transition: 'opacity 0.25s ease', 
-                          textAlign: 'center', }}>
+                          textAlign: 'center',
+                          margin: '10px', }}>
                       <div className="portfolio-box-caption">
                           <div className="project-category text-white-50">{project.description} </div>
                           <div>
