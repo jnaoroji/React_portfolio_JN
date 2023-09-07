@@ -30,17 +30,19 @@ export default function About() {
                 I’m a Full Stack Web Developer leveraging a management
                 background to provide a unique perspective on how end users
                 interact with websites and software platforms. This website
-                showcases some of my current work. I have a bachelor's degree in
-                Information Management, have been working as a Sommelier for the
-                past 3 years and have been in the Hospitality industry for over
-                10 years. My passions inlude Food, Wine and Sport. I am a
+                showcases some of my current work. I have a certificate in
+                Full-Stack Web Development from the University of Adelaide and a
+                Bachelor's degree in Business, Majoring in Information
+                Management and Marketing. I have been working as a Sommelier for
+                the past 3 years and have been in the Hospitality industry for
+                over 10 years. My passions include Food, Wine and Sport. I am a
                 bubbly, competitive, hard worker. I am a quick learner and am
                 always looking for new challenges and ways to improve and learn.
                 I enjoy creating, establishing and maintaining business and
                 customer relationships and strive to excel at this. My
                 hospitality and customer service background has stemmed into a
                 strong mental aptitude for working efficiently under pressure,
-                and creative problem solving on the job. I am looking for a role
+                and creative problem solving on the job. I am looking for a Web Development role
                 that will allow me to grow, take on new opportunities and
                 responsibilities and teach me new skills. I have plenty of
                 Supervisory, Management, Event and Operational experience and
