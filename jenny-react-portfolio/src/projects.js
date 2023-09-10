@@ -17,8 +17,8 @@ export const projects = [
         title: "Gif it a Try", 
         description: "Interactive Front-End Application",
         image:"https://user-images.githubusercontent.com/122245852/258641578-d3adfbba-609a-4aa6-b28b-8174a337ee3a.png",
-        link: "https://jnaoroji.github.io/group-project1-team-3-Interactive-Front-End-Application/", 
-        git:"https://github.com/jnaoroji/group-project1-team-3-Interactive-Front-End-Application",
+        link: "https://jnaoroji.github.io/gif_it_a_try_interactive_front_end_application/", 
+        git:"https://github.com/jnaoroji/gif_it_a_try_interactive_front_end_application",
     },
     {
         title: "Yoga Gym", 
