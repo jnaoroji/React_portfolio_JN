@@ -99,7 +99,13 @@ export default function Contact() {
             <div className="col-lg-8 col-xl-6 text-center">
               <h2 className="mt-0">Let's Get In Touch!</h2>
               <hr className="divider" />
-              <p className="text-muted mb-5">Ready to start your next project with me? Send me a message and I'll will get back to you as soon as possible!</p>
+              <p className="text-muted mb-5">Ready to start your next project with me? 
+              Send me a message using the form below or &nbsp; 
+              <a 
+              className="text-muted mb-5"
+              href="mailto:jennynaoroji@gmail.com">email me</a>
+              &nbsp;! 
+              </p>
             </div>
           </div>
           <div className="row gx-4 gx-lg-5 justify-content-center mb-5">

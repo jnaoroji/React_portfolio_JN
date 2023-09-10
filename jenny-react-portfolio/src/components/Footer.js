@@ -10,6 +10,7 @@ export default function Footer() {
               <div className="d-flex justify-content-center align-items-center">
                 <a href="https://github.com/jnaoroji" className="small text-center text-muted me-3"><i className="bi bi-github"></i></a>
                 <a href="https://www.linkedin.com/in/jenny-naoroji-158b29281/" className="small text-center text-muted me-3"><i className="bi bi-linkedin"></i></a>
+                <a href="mailto:jennynaoroji@gmail.com" className="small text-center text-muted me-3"><i className="bi bi-envelope"></i></a>
               </div>
             </div>
         </footer>
