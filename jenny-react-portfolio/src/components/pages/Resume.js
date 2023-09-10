@@ -11,7 +11,11 @@ export default function Resume() {
           <h2 className="text-center mt-0">At Your Service</h2>
           <hr className="divider" />
             <p className="text-muted mb-5 text-center">
-                Like what you see? Get in touch with me via the contact form!
+                Like what you see? Get in touch with me via the contact form or &nbsp;
+              <a 
+              className="text-muted mb-5"
+              href="mailto:jennynaoroji@gmail.com">email me</a>
+              &nbsp;! 
             </p>
           <div className="row gx-4 gx-lg-5">
             <div className="col-lg-3 col-md-6 text-center">
