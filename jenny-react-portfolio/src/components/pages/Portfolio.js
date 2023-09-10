@@ -21,11 +21,33 @@ export default function Portfolio() {
                           textAlign: 'center',
                           margin: '10px', }}>
                       <div className="portfolio-box-caption">
-                          <div className="project-category text-white-50">{project.description} </div>
-                          <div>
-                            <a href={project.git}><span className=" project-category text-white-50">Github Repo</span></a>
-                          </div>
                           <a href={project.link}><span className="project-name text-white">{project.title}</span></a> 
+                          <div className="project-category text-white-50 mt-4">{project.description} </div>
+                          <div className="project-stack text-white-50 mt-4">{project.stack} </div>
+                          <div className="mt-4">
+                            <a href={project.git}>
+                              <span className=" project-category text-white-50">
+                                <i 
+                                className="bi bi-github"
+                                style={{
+                                  fontSize: '24px',
+                                  margin:'10px',
+                                }}> 
+                                </i>
+                              </span>
+                            </a>
+                            <a href={project.link}>
+                              <span className=" project-category text-white-50">
+                                <i 
+                                className="bi bi-arrow-up-right-square-fill"
+                                style={{
+                                  fontSize: '24px',
+                                }}> 
+                                </i>
+                              </span>
+                            </a>
+                          </div>
+
                       </div>
                     </div>
           ))}
