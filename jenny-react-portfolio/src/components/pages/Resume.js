@@ -59,7 +59,7 @@ export default function Resume() {
                   Click here to see my </p>
 
                   <a
-                    href="https://drive.google.com/file/d/1lJKBxm6Rzof8gofUMJZd6QCzs0swdHh0/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1TjUkmolNaOKreHSfPFGfpsKN5oclTbYS/view?usp=sharing"
                     target="_blank" rel="noreferrer"
                   >
                     Resume 

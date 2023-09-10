@@ -4,12 +4,6 @@ import '../../styles/styles.css';
 import { validateEmail } from '../../utils/helpers';
 
 
-
-
-
-
-
-
 export default function Contact() {
   // Create state variables for the fields in the form and set their initial values to an empty string
   const form = useRef();
